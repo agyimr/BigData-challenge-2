@@ -1,6 +1,6 @@
 # Challenge 2 #
 
-I made all my solutions in **C++(11)** because I found it easier to deal with threads that way, and the computational speed was also considerably faster this way. I tried to comment everything extensively, to help understaing. The whole code can be found here: [code](https://github.com/agyimr/BigData-challenge-2).
+I made all my solutions in **C++(11)** because I found it easier to deal with threads that way, and the computational speed was also considerably faster this way. I tried to comment everything extensively, to help understanding. The whole code can be found here: [code](https://github.com/agyimr/BigData-challenge-2).
 
 I used an external library to process json files. It can be found here: [json](https://github.com/nlohmann/json).
 
@@ -34,16 +34,16 @@ The following data structure was used to store all the data in the memory. I use
 
 Number | Subreddit | Number of distinct words
 --- | --- | ---
-1. | AskReddit | 470078
-2. | funny | 192024
-3. | pics | 180308
-4. | videos | 163793
-5. | todayilearned | 161560
-6. | worldnews | 158867
-7. | subredditreports | 144235
-8. | leagueoflegends | 140919
-9. | AdviceAnimals | 121523
-10. | pcmasterrace | 119164
+1 | AskReddit | 470078
+2 | funny | 192024
+3 | pics | 180308
+4 | videos | 163793
+5 | todayilearned | 161560
+6 | worldnews | 158867
+7 | subredditreports | 144235
+8 | leagueoflegends | 140919
+9 | AdviceAnimals | 121523
+10 | pcmasterrace | 119164
 
 #### Note ####
 I used my version of differenciating between words, therefore you might not got the exact same results as me...
@@ -85,16 +85,16 @@ After this finishes, we have all the data in memory, now we have to find the com
 
 Number | Subreddit 1   | Subreddit 2 | Number of common authors
 --- | --- | --- | ---
-1. | AskReddit | funny | 141792
-2. | AskReddit | pics | 138676
-3. | AskReddit | todayilearned | 105143
-4. | pics | funny | 104904
-5. | AskReddit | videos | 91976
-6. | AskReddit | AdviceAnimals | 84458
-7. | todayilearned | funny | 71667
-8. | todayilearned | pics | 71560
-9. | AskReddit | WTF | 71249
-10. | pics | videos | 67091
+1 | AskReddit | funny | 141792
+2 | AskReddit | pics | 138676
+3 | AskReddit | todayilearned | 105143
+4 | pics | funny | 104904
+5 | AskReddit | videos | 91976
+6 | AskReddit | AdviceAnimals | 84458
+7 | todayilearned | funny | 71667
+8 | todayilearned | pics | 71560
+9 | AskReddit | WTF | 71249
+10 | pics | videos | 67091
 
 ---
 
@@ -128,16 +128,16 @@ Data processing (parallel)
 
 Number | Subreddit | Average depth
 --- | --- | ---
-1. | counting | 298.396
-2. | EroticRolePlay | 283.733
-3. | pepsibot | 250
-4. | SburbRP | 188
-5. | TheTwoCenturions | 156
-6. | RidersOfBerk | 138
-7. | survivorrankdown2 | 83
-8. | roleplaypinies | 74
-9. | DigitalMonsterRP | 70
-10. | ExploreFiction | 68.25
+1 | counting | 298.396
+2 | EroticRolePlay | 283.733
+3 | pepsibot | 250
+4 | SburbRP | 188
+5 | TheTwoCenturions | 156
+6 | RidersOfBerk | 138
+7 | survivorrankdown2 | 83
+8 | roleplaypinies | 74
+9 | DigitalMonsterRP | 70
+10 | ExploreFiction | 68.25
 
 ---
 
