@@ -64,12 +64,12 @@ The following data structure was used: I store two unordered\_maps for each subr
 
 #### Algorythm ####
 
-Data gathering: (this is done on each thread paralelly)
+Data gathering: (parallel)
 1. First we go through all the lines one by one, and extract the author and the subreddit. 
 2. Map the author to a unique number.
 3. Add this unique number to both the maps for each subreddit.
 
-After this finishes, we have all the data in memory, now we have to find the common authors. (this is also done in parallel)
+After this finishes, we have all the data in memory, now we have to find the common authors. (parallel)
 1. We go through all the subreddits in our map one by one.
 2. For each subreddit we check whether it has any common authors with the other subreddits still in front of him in the map. So if we are examining the 6th subreddit, we do not compare it with the first 5, we only compare it with the others starting from 6. This way we only compare every pair once. 
 3. During the comparison, we use the vector of author\_id-s to iterate over authors, and the unordered\_set of author\_id-s to check whether it is in the set or not. This gives us a huge speedup.
